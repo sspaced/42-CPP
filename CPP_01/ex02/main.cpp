@@ -4,9 +4,7 @@
 int main()
 {
 	std::string text = "HI THIS IS BRAIN";
-	// pointer
 	std::string* stringPTR = &text;
-	// reference
 	std::string&  stringREF = text;
 
 	std::cout << &text << std::endl;

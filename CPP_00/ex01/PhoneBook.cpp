@@ -18,9 +18,9 @@ void displayMenu()
 	std::cout << "Please choose an option (1-3): ";
 }
 
-Contact::Contact() : name("Name"), firstName("FirstName"),
-					 nickName("NickName"), darkestSecret("None"),
-					 phoneNumber("000000") {}
+Contact::Contact() : phoneNumber("000000"), name("Name"), 
+					firstName("FirstName"), nickName("NickName"), 
+					darkestSecret("None") {}
 
 Contact::~Contact() {}
 

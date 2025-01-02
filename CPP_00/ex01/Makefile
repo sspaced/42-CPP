@@ -1,8 +1,8 @@
 CXX = c++
-CXXFLAGS = -std=c++98 # -Wall -Wextra -Werror
+CXXFLAGS = -std=c++98 -Wall -Wextra -Werror
 SRC = main.cpp PhoneBook.cpp
 OBJ = $(SRC:.cpp=.o)  
-TARGET = phone_book
+TARGET = phonebook
 
 all: $(TARGET)
 

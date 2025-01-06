@@ -19,7 +19,7 @@ Fixed& Fixed::operator=(const Fixed& other)
 Fixed::Fixed(const Fixed& other)
 {
 	std::cout << "Copy constructor called" << std::endl;
-	this->number = other.getRawBits();
+	*this = other;
 }
 
 int Fixed::getRawBits(void) const

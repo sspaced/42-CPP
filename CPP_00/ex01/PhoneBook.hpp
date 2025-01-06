@@ -1,28 +1,10 @@
 #ifndef PHONEBOOK_HPP
 #define PHONEBOOK_HPP
 
-#include <iostream>
-#include <iomanip>
-#include <stdlib.h>
+#include "Contact.hpp"
 
-void clearScreen();
-void displayMenu();
-
-class	Contact {
-	private:
-		std::string	phoneNumber;
-		std::string name;
-		std::string firstName;
-		std::string nickName;
-		std::string darkestSecret;
-	public:
-		Contact();
-		~Contact();
-		void	DisplayContact(int index);
-		void	SetContactInfo();
-		int		displayField(std::string field_name);
-		void	displaySearchIndex(int index);
-};
+void	clearScreen();
+void	displayMenu();
 
 class	PhoneBook {
 	private:
@@ -35,7 +17,5 @@ class	PhoneBook {
 		void	displayPhoneBook();
 		void	contactDetailChoice();
 };
-
-
 
 #endif

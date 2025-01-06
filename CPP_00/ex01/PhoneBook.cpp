@@ -67,7 +67,10 @@ void PhoneBook::contactDetailChoice()
 		if (choice_int >= 1 && choice_int <= 8)
 		{
 			clearScreen();
-			contactList[choice_int].DisplayContact(choice_int);
+			if (choice_int <= nb_contact)
+				contactList[choice_int - 1].DisplayContact(choice_int);
+			else
+				std::cout << "This contact is empty !" << std::endl;
 			std::cout << "Press any key to quit ... ";
 			std::getline(std::cin, choice);
 			break;

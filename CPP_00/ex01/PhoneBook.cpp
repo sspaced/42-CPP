@@ -63,6 +63,8 @@ void PhoneBook::contactDetailChoice()
 	while (true)
 	{
 		std::getline(std::cin, choice);
+		if (std::cin.eof() || std::cin.fail())
+			exit(1);
 		int choice_int = std::atoi(choice.c_str());
 		if (choice_int >= 1 && choice_int <= 8)
 		{
@@ -73,6 +75,8 @@ void PhoneBook::contactDetailChoice()
 				std::cout << "This contact is empty !" << std::endl;
 			std::cout << "Press any key to quit ... ";
 			std::getline(std::cin, choice);
+			if (std::cin.eof() || std::cin.fail())
+				exit(1);
 			break;
 		}
 		else if (!choice.compare("q"))

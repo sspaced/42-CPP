@@ -14,6 +14,9 @@ int main()
 		clearScreen();
 		displayMenu();
 		std::getline(std::cin, choice);
+		if (std::cin.eof() || std::cin.fail())
+			return (1);
+
 		while (true)
 		{
 			if (choice == "1" || choice == "ADD")

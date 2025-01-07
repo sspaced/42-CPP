@@ -77,4 +77,6 @@ void Contact::SetContactInfo()
 	std::cout << "Phone number : ";
 	std::getline(std::cin, choice);
 	phoneNumber = choice;
+	if (std::cin.eof() || std::cin.fail())
+		exit(1);
 }
